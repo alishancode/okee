@@ -6,7 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7B142B0D2CE62BFC00C664BA /* ReportExtension.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 7B142B012CE62BFC00C664BA /* ReportExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
+		7B142B0B2CE62BFC00C664BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B35D0872CE46DA900D5E194 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B142B002CE62BFC00C664BA;
+			remoteInfo = ReportExtension;
+		};
 		7B35D0A02CE46DA900D5E194 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7B35D0872CE46DA900D5E194 /* Project object */;
@@ -23,13 +34,46 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7B142B0E2CE62BFC00C664BA /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				7B142B0D2CE62BFC00C664BA /* ReportExtension.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7B142B012CE62BFC00C664BA /* ReportExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = ReportExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B35D08F2CE46DA900D5E194 /* okee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = okee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B35D09F2CE46DA900D5E194 /* okeeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = okeeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B35D0A92CE46DA900D5E194 /* okeeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = okeeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7B142B112CE62BFC00C664BA /* Exceptions for "ReportExtension" folder in "ReportExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 7B142B002CE62BFC00C664BA /* ReportExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		7B142B022CE62BFC00C664BA /* ReportExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7B142B112CE62BFC00C664BA /* Exceptions for "ReportExtension" folder in "ReportExtension" target */,
+			);
+			path = ReportExtension;
+			sourceTree = "<group>";
+		};
 		7B35D0912CE46DA900D5E194 /* okee */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = okee;
@@ -48,6 +92,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7B142AFE2CE62BFC00C664BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7B35D08C2CE46DA900D5E194 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,6 +129,7 @@
 				7B35D0912CE46DA900D5E194 /* okee */,
 				7B35D0A22CE46DA900D5E194 /* okeeTests */,
 				7B35D0AC2CE46DA900D5E194 /* okeeUITests */,
+				7B142B022CE62BFC00C664BA /* ReportExtension */,
 				7B35D0902CE46DA900D5E194 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +140,7 @@
 				7B35D08F2CE46DA900D5E194 /* okee.app */,
 				7B35D09F2CE46DA900D5E194 /* okeeTests.xctest */,
 				7B35D0A92CE46DA900D5E194 /* okeeUITests.xctest */,
+				7B142B012CE62BFC00C664BA /* ReportExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +148,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7B142B002CE62BFC00C664BA /* ReportExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B142B122CE62BFC00C664BA /* Build configuration list for PBXNativeTarget "ReportExtension" */;
+			buildPhases = (
+				7B142AFD2CE62BFC00C664BA /* Sources */,
+				7B142AFE2CE62BFC00C664BA /* Frameworks */,
+				7B142AFF2CE62BFC00C664BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7B142B022CE62BFC00C664BA /* ReportExtension */,
+			);
+			name = ReportExtension;
+			packageProductDependencies = (
+			);
+			productName = ReportExtension;
+			productReference = 7B142B012CE62BFC00C664BA /* ReportExtension.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
 		7B35D08E2CE46DA900D5E194 /* okee */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B35D0B32CE46DA900D5E194 /* Build configuration list for PBXNativeTarget "okee" */;
@@ -102,10 +177,12 @@
 				7B35D08B2CE46DA900D5E194 /* Sources */,
 				7B35D08C2CE46DA900D5E194 /* Frameworks */,
 				7B35D08D2CE46DA900D5E194 /* Resources */,
+				7B142B0E2CE62BFC00C664BA /* Embed ExtensionKit Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7B142B0C2CE62BFC00C664BA /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				7B35D0912CE46DA900D5E194 /* okee */,
@@ -173,6 +250,9 @@
 				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
+					7B142B002CE62BFC00C664BA = {
+						CreatedOnToolsVersion = 16.1;
+					};
 					7B35D08E2CE46DA900D5E194 = {
 						CreatedOnToolsVersion = 16.1;
 					};
@@ -203,11 +283,19 @@
 				7B35D08E2CE46DA900D5E194 /* okee */,
 				7B35D09E2CE46DA900D5E194 /* okeeTests */,
 				7B35D0A82CE46DA900D5E194 /* okeeUITests */,
+				7B142B002CE62BFC00C664BA /* ReportExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7B142AFF2CE62BFC00C664BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7B35D08D2CE46DA900D5E194 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,6 +320,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7B142AFD2CE62BFC00C664BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7B35D08B2CE46DA900D5E194 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +351,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7B142B0C2CE62BFC00C664BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B142B002CE62BFC00C664BA /* ReportExtension */;
+			targetProxy = 7B142B0B2CE62BFC00C664BA /* PBXContainerItemProxy */;
+		};
 		7B35D0A12CE46DA900D5E194 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7B35D08E2CE46DA900D5E194 /* okee */;
@@ -269,6 +369,58 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		7B142B0F2CE62BFC00C664BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ReportExtension/ReportExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27R53MF3YB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReportExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ReportExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.okee.ReportExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B142B102CE62BFC00C664BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ReportExtension/ReportExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27R53MF3YB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReportExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ReportExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.okee.ReportExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		7B35D0B12CE46DA900D5E194 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -393,6 +545,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = okee/okee.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"okee/Preview Content\"";
@@ -422,6 +575,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = okee/okee.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"okee/Preview Content\"";
@@ -521,6 +675,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7B142B122CE62BFC00C664BA /* Build configuration list for PBXNativeTarget "ReportExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B142B0F2CE62BFC00C664BA /* Debug */,
+				7B142B102CE62BFC00C664BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7B35D08A2CE46DA900D5E194 /* Build configuration list for PBXProject "okee" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
