@@ -21,8 +21,9 @@ struct okeeApp: App {
                )!
            ),
            users: .all,
-           devices: .init([.iPhone, .iPad])
+           devices: .init([.iPhone])
        )
+    
     
     var body: some Scene {
         WindowGroup {
