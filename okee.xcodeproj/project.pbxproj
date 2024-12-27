@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7B142B0D2CE62BFC00C664BA /* ReportExtension.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 7B142B012CE62BFC00C664BA /* ReportExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7B4867F82CEF14FA008F5F76 /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4867F72CEF14FA008F5F76 /* ManagedSettings.framework */; };
+		7B4867FA2CEF14FA008F5F76 /* ManagedSettingsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4867F92CEF14FA008F5F76 /* ManagedSettingsUI.framework */; };
+		7B4868022CEF14FA008F5F76 /* okeeShield.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7B4867F52CEF14FA008F5F76 /* okeeShield.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +35,13 @@
 			remoteGlobalIDString = 7B35D08E2CE46DA900D5E194;
 			remoteInfo = okee;
 		};
+		7B4868002CEF14FA008F5F76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B35D0872CE46DA900D5E194 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B4867F42CEF14FA008F5F76;
+			remoteInfo = okeeShield;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +56,17 @@
 			name = "Embed ExtensionKit Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7B4868072CEF14FA008F5F76 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7B4868022CEF14FA008F5F76 /* okeeShield.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +74,9 @@
 		7B35D08F2CE46DA900D5E194 /* okee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = okee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B35D09F2CE46DA900D5E194 /* okeeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = okeeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B35D0A92CE46DA900D5E194 /* okeeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = okeeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B4867F52CEF14FA008F5F76 /* okeeShield.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = okeeShield.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B4867F72CEF14FA008F5F76 /* ManagedSettings.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettings.framework; path = System/Library/Frameworks/ManagedSettings.framework; sourceTree = SDKROOT; };
+		7B4867F92CEF14FA008F5F76 /* ManagedSettingsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettingsUI.framework; path = System/Library/Frameworks/ManagedSettingsUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -62,6 +86,20 @@
 				Info.plist,
 			);
 			target = 7B142B002CE62BFC00C664BA /* ReportExtension */;
+		};
+		7B4868062CEF14FA008F5F76 /* Exceptions for "okeeShield" folder in "okeeShield" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 7B4867F42CEF14FA008F5F76 /* okeeShield */;
+		};
+		7BE27B8D2CEB701700382824 /* Exceptions for "okee" folder in "okee" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 7B35D08E2CE46DA900D5E194 /* okee */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -76,6 +114,9 @@
 		};
 		7B35D0912CE46DA900D5E194 /* okee */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7BE27B8D2CEB701700382824 /* Exceptions for "okee" folder in "okee" target */,
+			);
 			path = okee;
 			sourceTree = "<group>";
 		};
@@ -87,6 +128,14 @@
 		7B35D0AC2CE46DA900D5E194 /* okeeUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = okeeUITests;
+			sourceTree = "<group>";
+		};
+		7B4867FB2CEF14FA008F5F76 /* okeeShield */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7B4868062CEF14FA008F5F76 /* Exceptions for "okeeShield" folder in "okeeShield" target */,
+			);
+			path = okeeShield;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -120,6 +169,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7B4867F22CEF14FA008F5F76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B4867F82CEF14FA008F5F76 /* ManagedSettings.framework in Frameworks */,
+				7B4867FA2CEF14FA008F5F76 /* ManagedSettingsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -130,6 +188,8 @@
 				7B35D0A22CE46DA900D5E194 /* okeeTests */,
 				7B35D0AC2CE46DA900D5E194 /* okeeUITests */,
 				7B142B022CE62BFC00C664BA /* ReportExtension */,
+				7B4867FB2CEF14FA008F5F76 /* okeeShield */,
+				7B4867F62CEF14FA008F5F76 /* Frameworks */,
 				7B35D0902CE46DA900D5E194 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -141,8 +201,18 @@
 				7B35D09F2CE46DA900D5E194 /* okeeTests.xctest */,
 				7B35D0A92CE46DA900D5E194 /* okeeUITests.xctest */,
 				7B142B012CE62BFC00C664BA /* ReportExtension.appex */,
+				7B4867F52CEF14FA008F5F76 /* okeeShield.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7B4867F62CEF14FA008F5F76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B4867F72CEF14FA008F5F76 /* ManagedSettings.framework */,
+				7B4867F92CEF14FA008F5F76 /* ManagedSettingsUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,11 +248,13 @@
 				7B35D08C2CE46DA900D5E194 /* Frameworks */,
 				7B35D08D2CE46DA900D5E194 /* Resources */,
 				7B142B0E2CE62BFC00C664BA /* Embed ExtensionKit Extensions */,
+				7B4868072CEF14FA008F5F76 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				7B142B0C2CE62BFC00C664BA /* PBXTargetDependency */,
+				7B4868012CEF14FA008F5F76 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				7B35D0912CE46DA900D5E194 /* okee */,
@@ -240,6 +312,28 @@
 			productReference = 7B35D0A92CE46DA900D5E194 /* okeeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		7B4867F42CEF14FA008F5F76 /* okeeShield */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B4868032CEF14FA008F5F76 /* Build configuration list for PBXNativeTarget "okeeShield" */;
+			buildPhases = (
+				7B4867F12CEF14FA008F5F76 /* Sources */,
+				7B4867F22CEF14FA008F5F76 /* Frameworks */,
+				7B4867F32CEF14FA008F5F76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7B4867FB2CEF14FA008F5F76 /* okeeShield */,
+			);
+			name = okeeShield;
+			packageProductDependencies = (
+			);
+			productName = okeeShield;
+			productReference = 7B4867F52CEF14FA008F5F76 /* okeeShield.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -264,6 +358,9 @@
 						CreatedOnToolsVersion = 16.1;
 						TestTargetID = 7B35D08E2CE46DA900D5E194;
 					};
+					7B4867F42CEF14FA008F5F76 = {
+						CreatedOnToolsVersion = 16.1;
+					};
 				};
 			};
 			buildConfigurationList = 7B35D08A2CE46DA900D5E194 /* Build configuration list for PBXProject "okee" */;
@@ -284,6 +381,7 @@
 				7B35D09E2CE46DA900D5E194 /* okeeTests */,
 				7B35D0A82CE46DA900D5E194 /* okeeUITests */,
 				7B142B002CE62BFC00C664BA /* ReportExtension */,
+				7B4867F42CEF14FA008F5F76 /* okeeShield */,
 			);
 		};
 /* End PBXProject section */
@@ -311,6 +409,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7B35D0A72CE46DA900D5E194 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B4867F32CEF14FA008F5F76 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -348,6 +453,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7B4867F12CEF14FA008F5F76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -365,6 +477,11 @@
 			isa = PBXTargetDependency;
 			target = 7B35D08E2CE46DA900D5E194 /* okee */;
 			targetProxy = 7B35D0AA2CE46DA900D5E194 /* PBXContainerItemProxy */;
+		};
+		7B4868012CEF14FA008F5F76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B4867F42CEF14FA008F5F76 /* okeeShield */;
+			targetProxy = 7B4868002CEF14FA008F5F76 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -552,6 +669,7 @@
 				DEVELOPMENT_TEAM = 27R53MF3YB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = okee/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -582,6 +700,7 @@
 				DEVELOPMENT_TEAM = 27R53MF3YB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = okee/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -672,6 +791,58 @@
 			};
 			name = Release;
 		};
+		7B4868042CEF14FA008F5F76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = okeeShield/okeeShield.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27R53MF3YB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = okeeShield/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = okeeShield;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.okee.okeeShield;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B4868052CEF14FA008F5F76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = okeeShield/okeeShield.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 27R53MF3YB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = okeeShield/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = okeeShield;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.okee.okeeShield;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -716,6 +887,15 @@
 			buildConfigurations = (
 				7B35D0BA2CE46DA900D5E194 /* Debug */,
 				7B35D0BB2CE46DA900D5E194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B4868032CEF14FA008F5F76 /* Build configuration list for PBXNativeTarget "okeeShield" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B4868042CEF14FA008F5F76 /* Debug */,
+				7B4868052CEF14FA008F5F76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
